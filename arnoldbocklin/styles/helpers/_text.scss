@@ -1,0 +1,185 @@
+@import "variables";
+
+@font-face {
+  font-family: "Arnold Bocklin";
+  src: url("../../fonts/Nouveauflf-qZ35.ttf") format("truetype");
+}
+
+/* playfair-display-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/playfair-display-v36-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/playfair-display-v36-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/playfair-display-v36-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/playfair-display-v36-latin-500italic.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/playfair-display-v36-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* holtwood-one-sc-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Holtwood One SC";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/holtwood-one-sc-v20-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* abril-fatface-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/abril-fatface-v23-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* nanum-brush-script-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nanum Brush Script";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/nanum-brush-script-v22-latin-regular.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* pinyon-script-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Pinyon Script";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pinyon-script-v21-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-family: "Betty Noir";
+  src: url("../fonts/bettynoir.ttf") format("truetype");
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Arnold Bocklin", sans-serif;
+  color: $primary-color;
+}
+
+h1 {
+  font-size: 7vw;
+  text-align: center;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p,
+a,
+button,
+figcaption {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 500;
+  color: $primary-color;
+  font-size: 16px;
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 576px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1400px) {
+  h3 {
+    font-size: 28px;
+  }
+}
+
+.wood {
+  font-family: "Holtwood One SC", sans-serif;
+}
+
+.art-deco {
+  font-family: "Betty Noir", sans-serif;
+}
+
+.fat-faces {
+  font-family: "Abril Fatface", sans-serif;
+}
+
+.formeel-script {
+  font-family: "Pinyon Script", sans-serif;
+}
+
+.informeel-script {
+  font-family: "Nanum Brush Script", sans-serif;
+}
+
+.fonts {
+  h4 {
+    padding: 0 10px 10px 10px;
+  }
+}
+
+.example {
+  font-family: "Arnold Bocklin", sans-serif;
+}

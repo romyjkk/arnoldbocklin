@@ -1,0 +1,111 @@
+.font {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  z-index: 4;
+  position: relative;
+  height: 100vh;
+  background: $primary-background;
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+  .overzicht-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+    word-wrap: break-word;
+    margin-top: 30px;
+    .uppercase {
+      text-transform: uppercase;
+    }
+  }
+  .editable {
+    z-index: 5;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+
+.example {
+  font-size: 60px;
+  max-width: 80%;
+}
+
+@media (max-width: 576px) {
+  main {
+    .font {
+      .characteristic-container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        gap: 20px;
+        .characteristic-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .characteristic {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background: $secondary-background;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  main {
+    .font {
+      .characteristic-container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        gap: 20px;
+        .characteristic-wrapper {
+          display: flex;
+          flex-direction: row;
+          gap: 20px;
+          .characteristic {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background: $secondary-background;
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    .font {
+      .characteristic-container {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        gap: 20px;
+        .characteristic-wrapper {
+          flex: 1;
+          display: flex;
+          flex-direction: row;
+          gap: 20px;
+          .characteristic {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background: $secondary-background;
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+}

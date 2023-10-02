@@ -1,0 +1,864 @@
+@font-face {
+  font-family: "Arnold Bocklin";
+  src: url("../../fonts/Nouveauflf-qZ35.ttf") format("truetype");
+}
+/* playfair-display-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/playfair-display-v36-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/playfair-display-v36-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/playfair-display-v36-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/playfair-display-v36-latin-500italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* playfair-display-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/playfair-display-v36-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* holtwood-one-sc-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Holtwood One SC";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/holtwood-one-sc-v20-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* abril-fatface-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Abril Fatface";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/abril-fatface-v23-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nanum-brush-script-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nanum Brush Script";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/nanum-brush-script-v22-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* pinyon-script-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Pinyon Script";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pinyon-script-v21-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-family: "Betty Noir";
+  src: url("../fonts/bettynoir.ttf") format("truetype");
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Arnold Bocklin", sans-serif;
+  color: #e6e6e6;
+}
+
+h1 {
+  font-size: 7vw;
+  text-align: center;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p,
+a,
+button,
+figcaption {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 500;
+  color: #e6e6e6;
+  font-size: 16px;
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 576px) {
+  p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1400px) {
+  h3 {
+    font-size: 28px;
+  }
+}
+.wood {
+  font-family: "Holtwood One SC", sans-serif;
+}
+
+.art-deco {
+  font-family: "Betty Noir", sans-serif;
+}
+
+.fat-faces {
+  font-family: "Abril Fatface", sans-serif;
+}
+
+.formeel-script {
+  font-family: "Pinyon Script", sans-serif;
+}
+
+.informeel-script {
+  font-family: "Nanum Brush Script", sans-serif;
+}
+
+.fonts h4 {
+  padding: 0 10px 10px 10px;
+}
+
+.example {
+  font-family: "Arnold Bocklin", sans-serif;
+}
+
+/*
+#####
+title
+#####
+*/
+h1 {
+  color: #e6e6e6;
+  text-shadow: 0px 0px #662331, -1px 1px #662331, -2px 2px #662331, -3px 3px #662331, -4px 4px #662331, -5px 5px #662331, -6px 6px #662331, -7px 7px #662331, -8px 8px #662331, -9px 9px #662331, -10px 10px #662331, -11px 11px #662331, -12px 12px #662331, -13px 13px #662331, -14px 14px #662331, -15px 15px #662331, -16px 16px #662331, -17px 17px #662331, -18px 18px #662331, -19px 19px #662331, -20px 20px #662331, -21px 21px #662331, -22px 22px #662331, -23px 23px #662331, -24px 24px #662331, -25px 25px #662331, -26px 26px #662331, -27px 27px #662331, -28px 28px #662331, -29px 29px #662331, -30px 30px #662331, -31px 31px #662331, -32px 32px #662331, -33px 33px #662331, -34px 34px #662331, -35px 35px #662331, -36px 36px #662331, -37px 37px #662331, -38px 38px #662331, -39px 39px #662331, -40px 40px #662331, -41px 41px #662331, -42px 42px #662331, -43px 43px #662331, -44px 44px #662331, -45px 45px #662331, -46px 46px #662331, -47px 47px #662331, -48px 48px #662331, -49px 49px #662331, -50px 50px #662331;
+  animation: color 1.5s ease-in infinite;
+}
+
+@keyframes color {
+  0%, 10% {
+    color: #662331;
+    text-shadow: 0px 0px #4c1d27, -1px 1px #4c1d27, -2px 2px #4c1d27, -3px 3px #4c1d27, -4px 4px #4c1d27, -5px 5px #4c1d27, -6px 6px #4c1d27, -7px 7px #4c1d27, -8px 8px #4c1d27, -9px 9px #4c1d27, -10px 10px #4c1d27, -11px 11px #4c1d27, -12px 12px #4c1d27, -13px 13px #4c1d27, -14px 14px #4c1d27, -15px 15px #4c1d27, -16px 16px #4c1d27, -17px 17px #4c1d27, -18px 18px #4c1d27, -19px 19px #4c1d27, -20px 20px #4c1d27, -21px 21px #4c1d27, -22px 22px #4c1d27, -23px 23px #4c1d27, -24px 24px #4c1d27, -25px 25px #4c1d27, -26px 26px #4c1d27, -27px 27px #4c1d27, -28px 28px #4c1d27, -29px 29px #4c1d27, -30px 30px #4c1d27, -31px 31px #4c1d27, -32px 32px #4c1d27, -33px 33px #4c1d27, -34px 34px #4c1d27, -35px 35px #4c1d27, -36px 36px #4c1d27, -37px 37px #4c1d27, -38px 38px #4c1d27, -39px 39px #4c1d27, -40px 40px #4c1d27, -41px 41px #4c1d27, -42px 42px #4c1d27, -43px 43px #4c1d27, -44px 44px #4c1d27, -45px 45px #4c1d27, -46px 46px #4c1d27, -47px 47px #4c1d27, -48px 48px #4c1d27, -49px 49px #4c1d27, -50px 50px #4c1d27;
+  }
+  11%, 20% {
+    color: #662331;
+    text-shadow: 0px 0px #4c1d27, -1px 1px #4c1d27, -2px 2px #4c1d27, -3px 3px #4c1d27, -4px 4px #4c1d27, -5px 5px #4c1d27, -6px 6px #4c1d27, -7px 7px #4c1d27, -8px 8px #4c1d27, -9px 9px #4c1d27, -10px 10px #4c1d27, 0px 0px #4c1d27, -11px 11px #4c1d27, -12px 12px #4c1d27, -13px 13px #4c1d27, -14px 14px #4c1d27, -15px 15px #4c1d27, -16px 16px #4c1d27, -17px 17px #4c1d27, -18px 18px #4c1d27, -19px 19px #4c1d27, -20px 20px #4c1d27, 0px 0px #4c1d27, -21px 21px #4c1d27, -22px 22px #4c1d27, -23px 23px #4c1d27, -24px 24px #4c1d27, -25px 25px #4c1d27, -26px 26px #4c1d27, -27px 27px #4c1d27, -28px 28px #4c1d27, -29px 29px #4c1d27, -30px 30px #4c1d27, 0px 0px #4c1d27, -31px 31px #4c1d27, -32px 32px #4c1d27, -33px 33px #4c1d27, -34px 34px #4c1d27, -35px 35px #4c1d27, -36px 36px #4c1d27, -37px 37px #4c1d27, -38px 38px #4c1d27, -39px 39px #4c1d27, -40px 40px #4c1d27, 0px 0px #662331, -41px 41px #662331, -42px 42px #662331, -43px 43px #662331, -44px 44px #662331, -45px 45px #662331, -46px 46px #662331, -47px 47px #662331, -48px 48px #662331, -49px 49px #662331, -50px 50px #662331;
+  }
+  21%, 30% {
+    color: #662331;
+    text-shadow: 0px 0px #4c1d27, -1px 1px #4c1d27, -2px 2px #4c1d27, -3px 3px #4c1d27, -4px 4px #4c1d27, -5px 5px #4c1d27, -6px 6px #4c1d27, -7px 7px #4c1d27, -8px 8px #4c1d27, -9px 9px #4c1d27, -10px 10px #4c1d27, 0px 0px #4c1d27, -11px 11px #4c1d27, -12px 12px #4c1d27, -13px 13px #4c1d27, -14px 14px #4c1d27, -15px 15px #4c1d27, -16px 16px #4c1d27, -17px 17px #4c1d27, -18px 18px #4c1d27, -19px 19px #4c1d27, -20px 20px #4c1d27, 0px 0px #4c1d27, -21px 21px #4c1d27, -22px 22px #4c1d27, -23px 23px #4c1d27, -24px 24px #4c1d27, -25px 25px #4c1d27, -26px 26px #4c1d27, -27px 27px #4c1d27, -28px 28px #4c1d27, -29px 29px #4c1d27, -30px 30px #4c1d27, 0px 0px #662331, -31px 31px #662331, -32px 32px #662331, -33px 33px #662331, -34px 34px #662331, -35px 35px #662331, -36px 36px #662331, -37px 37px #662331, -38px 38px #662331, -39px 39px #662331, -40px 40px #662331, 0px 0px #662331, -41px 41px #662331, -42px 42px #662331, -43px 43px #662331, -44px 44px #662331, -45px 45px #662331, -46px 46px #662331, -47px 47px #662331, -48px 48px #662331, -49px 49px #662331, -50px 50px #662331;
+  }
+  31%, 40% {
+    color: #662331;
+    text-shadow: 0px 0px #4c1d27, -1px 1px #4c1d27, -2px 2px #4c1d27, -3px 3px #4c1d27, -4px 4px #4c1d27, -5px 5px #4c1d27, -6px 6px #4c1d27, -7px 7px #4c1d27, -8px 8px #4c1d27, -9px 9px #4c1d27, -10px 10px #4c1d27, 0px 0px #4c1d27, -11px 11px #4c1d27, -12px 12px #4c1d27, -13px 13px #4c1d27, -14px 14px #4c1d27, -15px 15px #4c1d27, -16px 16px #4c1d27, -17px 17px #4c1d27, -18px 18px #4c1d27, -19px 19px #4c1d27, -20px 20px #4c1d27, 0px 0px #662331, -21px 21px #662331, -22px 22px #662331, -23px 23px #662331, -24px 24px #662331, -25px 25px #662331, -26px 26px #662331, -27px 27px #662331, -28px 28px #662331, -29px 29px #662331, -30px 30px #662331, 0px 0px #662331, -31px 31px #662331, -32px 32px #662331, -33px 33px #662331, -34px 34px #662331, -35px 35px #662331, -36px 36px #662331, -37px 37px #662331, -38px 38px #662331, -39px 39px #662331, -40px 40px #662331, 0px 0px #662331, -41px 41px #662331, -42px 42px #662331, -43px 43px #662331, -44px 44px #662331, -45px 45px #662331, -46px 46px #662331, -47px 47px #662331, -48px 48px #662331, -49px 49px #662331, -50px 50px #662331;
+  }
+  41%, 50% {
+    color: #662331;
+    text-shadow: 0px 0px #4c1d27, -1px 1px #4c1d27, -2px 2px #4c1d27, -3px 3px #4c1d27, -4px 4px #4c1d27, -5px 5px #4c1d27, -6px 6px #4c1d27, -7px 7px #4c1d27, -8px 8px #4c1d27, -9px 9px #4c1d27, -10px 10px #4c1d27, 0px 0px #662331, -11px 11px #662331, -12px 12px #662331, -13px 13px #662331, -14px 14px #662331, -15px 15px #662331, -16px 16px #662331, -17px 17px #662331, -18px 18px #662331, -19px 19px #662331, -20px 20px #662331, 0px 0px #662331, -21px 21px #662331, -22px 22px #662331, -23px 23px #662331, -24px 24px #662331, -25px 25px #662331, -26px 26px #662331, -27px 27px #662331, -28px 28px #662331, -29px 29px #662331, -30px 30px #662331, 0px 0px #662331, -31px 31px #662331, -32px 32px #662331, -33px 33px #662331, -34px 34px #662331, -35px 35px #662331, -36px 36px #662331, -37px 37px #662331, -38px 38px #662331, -39px 39px #662331, -40px 40px #662331, 0px 0px #662331, -41px 41px #662331, -42px 42px #662331, -43px 43px #662331, -44px 44px #662331, -45px 45px #662331, -46px 46px #662331, -47px 47px #662331, -48px 48px #662331, -49px 49px #662331, -50px 50px #662331;
+  }
+  51%, 60% {
+    color: #e6e6e6;
+    text-shadow: 0px 0px #662331, -1px 1px #662331, -2px 2px #662331, -3px 3px #662331, -4px 4px #662331, -5px 5px #662331, -6px 6px #662331, -7px 7px #662331, -8px 8px #662331, -9px 9px #662331, -10px 10px #662331, 0px 0px #662331, -11px 11px #662331, -12px 12px #662331, -13px 13px #662331, -14px 14px #662331, -15px 15px #662331, -16px 16px #662331, -17px 17px #662331, -18px 18px #662331, -19px 19px #662331, -20px 20px #662331, 0px 0px #662331, -21px 21px #662331, -22px 22px #662331, -23px 23px #662331, -24px 24px #662331, -25px 25px #662331, -26px 26px #662331, -27px 27px #662331, -28px 28px #662331, -29px 29px #662331, -30px 30px #662331, 0px 0px #662331, -31px 31px #662331, -32px 32px #662331, -33px 33px #662331, -34px 34px #662331, -35px 35px #662331, -36px 36px #662331, -37px 37px #662331, -38px 38px #662331, -39px 39px #662331, -40px 40px #662331, 0px 0px #662331, -41px 41px #662331, -42px 42px #662331, -43px 43px #662331, -44px 44px #662331, -45px 45px #662331, -46px 46px #662331, -47px 47px #662331, -48px 48px #662331, -49px 49px #662331, -50px 50px #662331;
+  }
+  61%, 100% {
+    color: #e6e6e6;
+    text-shadow: 0px 0px #662331, -1px 1px #662331, -2px 2px #662331, -3px 3px #662331, -4px 4px #662331, -5px 5px #662331, -6px 6px #662331, -7px 7px #662331, -8px 8px #662331, -9px 9px #662331, -10px 10px #662331, 0px 0px #662331, -11px 11px #662331, -12px 12px #662331, -13px 13px #662331, -14px 14px #662331, -15px 15px #662331, -16px 16px #662331, -17px 17px #662331, -18px 18px #662331, -19px 19px #662331, -20px 20px #662331, 0px 0px #662331, -21px 21px #662331, -22px 22px #662331, -23px 23px #662331, -24px 24px #662331, -25px 25px #662331, -26px 26px #662331, -27px 27px #662331, -28px 28px #662331, -29px 29px #662331, -30px 30px #662331, 0px 0px #662331, -31px 31px #662331, -32px 32px #662331, -33px 33px #662331, -34px 34px #662331, -35px 35px #662331, -36px 36px #662331, -37px 37px #662331, -38px 38px #662331, -39px 39px #662331, -40px 40px #662331, 0px 0px #662331, -41px 41px #662331, -42px 42px #662331, -43px 43px #662331, -44px 44px #662331, -45px 45px #662331, -46px 46px #662331, -47px 47px #662331, -48px 48px #662331, -49px 49px #662331, -50px 50px #662331;
+  }
+}
+/*
+#######
+flowers
+#######
+*/
+.sway {
+  animation: sway 3s linear infinite;
+}
+
+@keyframes sway {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #371724;
+}
+
+main .introduction {
+  height: 100vh;
+  position: relative;
+  z-index: 4;
+}
+main .introduction .container {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 100%;
+  z-index: 1;
+}
+main .introduction .container h1 {
+  margin-top: 60px;
+}
+main .introduction .container .border-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: rotate(180deg);
+  height: 100%;
+}
+main .introduction .container .border-left img {
+  height: 80%;
+}
+main .introduction .container .ornament {
+  position: absolute;
+  bottom: -20%;
+  right: 25%;
+}
+main .introduction .container .ornament img {
+  width: fit-content;
+}
+main .introduction .container .border-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+main .introduction .container .border-right img {
+  height: 80%;
+}
+
+.introduction #big-flower {
+  display: none;
+}
+
+#particles,
+#particles2,
+#particles3 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  main .introduction h1 {
+    font-size: 70px;
+    word-wrap: break-word;
+    margin-left: 20px;
+    z-index: 5;
+  }
+  main .introduction .border-left img,
+  main .introduction .border-right img {
+    height: 60%;
+  }
+  main .introduction .ornament {
+    width: 200px;
+  }
+}
+@media (min-width: 992px) {
+  .introduction .container h1 {
+    margin-left: -25%;
+  }
+  .introduction .ornament {
+    width: 250px;
+  }
+}
+.history {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background: #4c1d27;
+  height: 100%;
+  padding-top: 30px;
+}
+.history .history-title {
+  z-index: 5;
+}
+.history .history-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.history .history-container .arnold-bocklin-card,
+.history .history-container .art-nouveau-card,
+.history .history-container .sansandserif-card,
+.history .history-container .chat-noir-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  perspective: 600px;
+  z-index: 5;
+}
+.history .history-container .arnold-bocklin-card .card-toggle,
+.history .history-container .art-nouveau-card .card-toggle,
+.history .history-container .sansandserif-card .card-toggle,
+.history .history-container .chat-noir-card .card-toggle {
+  transform: rotateY(0deg);
+  transition: transform 0.5s;
+}
+.history .history-container .arnold-bocklin-card .card-content.flipped,
+.history .history-container .art-nouveau-card .card-content.flipped,
+.history .history-container .sansandserif-card .card-content.flipped,
+.history .history-container .chat-noir-card .card-content.flipped {
+  transform: rotateY(180deg);
+}
+.history .history-container .arnold-bocklin-card .front-and-back,
+.history .history-container .art-nouveau-card .front-and-back,
+.history .history-container .sansandserif-card .front-and-back,
+.history .history-container .chat-noir-card .front-and-back {
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  perspective: 300px;
+}
+.history .history-container .arnold-bocklin-card .front-and-back:hover,
+.history .history-container .art-nouveau-card .front-and-back:hover,
+.history .history-container .sansandserif-card .front-and-back:hover,
+.history .history-container .chat-noir-card .front-and-back:hover {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+.history .history-container .arnold-bocklin-card .front-and-back .card-front,
+.history .history-container .arnold-bocklin-card .front-and-back .card-back,
+.history .history-container .art-nouveau-card .front-and-back .card-front,
+.history .history-container .art-nouveau-card .front-and-back .card-back,
+.history .history-container .sansandserif-card .front-and-back .card-front,
+.history .history-container .sansandserif-card .front-and-back .card-back,
+.history .history-container .chat-noir-card .front-and-back .card-front,
+.history .history-container .chat-noir-card .front-and-back .card-back {
+  backface-visibility: hidden;
+}
+.history .history-container .arnold-bocklin-card .front-and-back .card-front,
+.history .history-container .art-nouveau-card .front-and-back .card-front,
+.history .history-container .sansandserif-card .front-and-back .card-front,
+.history .history-container .chat-noir-card .front-and-back .card-front {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.history .history-container .arnold-bocklin-card .front-and-back .card-front img,
+.history .history-container .art-nouveau-card .front-and-back .card-front img,
+.history .history-container .sansandserif-card .front-and-back .card-front img,
+.history .history-container .chat-noir-card .front-and-back .card-front img {
+  width: 400px;
+}
+.history .history-container .arnold-bocklin-card .front-and-back .card-back,
+.history .history-container .art-nouveau-card .front-and-back .card-back,
+.history .history-container .sansandserif-card .front-and-back .card-back,
+.history .history-container .chat-noir-card .front-and-back .card-back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotateY(180deg);
+  background: #371724;
+  width: 100%;
+  height: 100%;
+}
+.history .history-container .arnold-bocklin-card .front-and-back .card-back h3,
+.history .history-container .art-nouveau-card .front-and-back .card-back h3,
+.history .history-container .sansandserif-card .front-and-back .card-back h3,
+.history .history-container .chat-noir-card .front-and-back .card-back h3 {
+  text-align: left;
+  width: 85%;
+  padding: 10px 10px 0 10px;
+}
+.history .history-container .arnold-bocklin-card .front-and-back .card-back p,
+.history .history-container .art-nouveau-card .front-and-back .card-back p,
+.history .history-container .sansandserif-card .front-and-back .card-back p,
+.history .history-container .chat-noir-card .front-and-back .card-back p {
+  padding: 0 10px 10px 10px;
+}
+.history .history-container .arnold-bocklin-card .front-and-back .card-back .fonts,
+.history .history-container .art-nouveau-card .front-and-back .card-back .fonts,
+.history .history-container .sansandserif-card .front-and-back .card-back .fonts,
+.history .history-container .chat-noir-card .front-and-back .card-back .fonts {
+  width: 90%;
+}
+.history .history-container .arnold-bocklin-card .front-and-back .card-back .fonts h4,
+.history .history-container .art-nouveau-card .front-and-back .card-back .fonts h4,
+.history .history-container .sansandserif-card .front-and-back .card-back .fonts h4,
+.history .history-container .chat-noir-card .front-and-back .card-back .fonts h4 {
+  margin: 20px 0 0 0;
+}
+.history .history-container .arnold-bocklin-card .front-and-back .card-back .fonts p,
+.history .history-container .art-nouveau-card .front-and-back .card-back .fonts p,
+.history .history-container .sansandserif-card .front-and-back .card-back .fonts p,
+.history .history-container .chat-noir-card .front-and-back .card-back .fonts p {
+  display: flex;
+  flex-direction: column;
+}
+.history .history-container .arnold-bocklin-card .front-and-back .caption,
+.history .history-container .art-nouveau-card .front-and-back .caption,
+.history .history-container .sansandserif-card .front-and-back .caption,
+.history .history-container .chat-noir-card .front-and-back .caption {
+  writing-mode: vertical-lr;
+  align-self: center;
+  margin-left: 10px;
+}
+.history .history-container .arnold-bocklin-card .arnold-bocklin-card,
+.history .history-container .arnold-bocklin-card .sansandserif-card,
+.history .history-container .arnold-bocklin-card .chat-noir-card,
+.history .history-container .art-nouveau-card .arnold-bocklin-card,
+.history .history-container .art-nouveau-card .sansandserif-card,
+.history .history-container .art-nouveau-card .chat-noir-card,
+.history .history-container .sansandserif-card .arnold-bocklin-card,
+.history .history-container .sansandserif-card .sansandserif-card,
+.history .history-container .sansandserif-card .chat-noir-card,
+.history .history-container .chat-noir-card .arnold-bocklin-card,
+.history .history-container .chat-noir-card .sansandserif-card,
+.history .history-container .chat-noir-card .chat-noir-card {
+  align-self: flex-start;
+}
+.history .history-container .arnold-bocklin-card .art-nouveau-card,
+.history .history-container .art-nouveau-card .art-nouveau-card,
+.history .history-container .sansandserif-card .art-nouveau-card,
+.history .history-container .chat-noir-card .art-nouveau-card {
+  align-self: flex-end;
+  margin-right: 300px;
+  margin-top: -100px;
+}
+.history .history-container .arnold-bocklin-card .art-nouveau-card .caption,
+.history .history-container .art-nouveau-card .art-nouveau-card .caption,
+.history .history-container .sansandserif-card .art-nouveau-card .caption,
+.history .history-container .chat-noir-card .art-nouveau-card .caption {
+  margin: 0 10px 0 0;
+}
+.history .history-container .arnold-bocklin-card .arnold-bocklin-card,
+.history .history-container .art-nouveau-card .arnold-bocklin-card,
+.history .history-container .sansandserif-card .arnold-bocklin-card,
+.history .history-container .chat-noir-card .arnold-bocklin-card {
+  margin-left: 300px;
+}
+.history .history-container .arnold-bocklin-card .arnold-bocklin-card .card-back .information-container,
+.history .history-container .art-nouveau-card .arnold-bocklin-card .card-back .information-container,
+.history .history-container .sansandserif-card .arnold-bocklin-card .card-back .information-container,
+.history .history-container .chat-noir-card .arnold-bocklin-card .card-back .information-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+}
+.history .history-container .arnold-bocklin-card .arnold-bocklin-card .card-back .information-container p,
+.history .history-container .art-nouveau-card .arnold-bocklin-card .card-back .information-container p,
+.history .history-container .sansandserif-card .arnold-bocklin-card .card-back .information-container p,
+.history .history-container .chat-noir-card .arnold-bocklin-card .card-back .information-container p {
+  margin-top: 20px;
+}
+.history .history-container .arnold-bocklin-card .arnold-bocklin-card .card-back .image-container,
+.history .history-container .art-nouveau-card .arnold-bocklin-card .card-back .image-container,
+.history .history-container .sansandserif-card .arnold-bocklin-card .card-back .image-container,
+.history .history-container .chat-noir-card .arnold-bocklin-card .card-back .image-container {
+  display: flex;
+  justify-content: center;
+}
+.history .history-container .arnold-bocklin-card .arnold-bocklin-card .card-back .image-container img,
+.history .history-container .art-nouveau-card .arnold-bocklin-card .card-back .image-container img,
+.history .history-container .sansandserif-card .arnold-bocklin-card .card-back .image-container img,
+.history .history-container .chat-noir-card .arnold-bocklin-card .card-back .image-container img {
+  width: 80%;
+}
+.history .history-container .arnold-bocklin-card .chat-noir-card,
+.history .history-container .art-nouveau-card .chat-noir-card,
+.history .history-container .sansandserif-card .chat-noir-card,
+.history .history-container .chat-noir-card .chat-noir-card {
+  margin-left: 300px;
+  margin-top: -100px;
+}
+.history .history-container .big-flower {
+  position: fixed;
+  height: 90%;
+  z-index: 1;
+  bottom: 0;
+  width: fit-content;
+}
+.history .history-container .left {
+  left: 20px;
+}
+.history .history-container .right {
+  right: 20px;
+}
+
+@media (max-width: 576px) {
+  .history .history-container .arnold-bocklin-card,
+  .history .history-container .art-nouveau-card,
+  .history .history-container .chat-noir-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .history .history-container .arnold-bocklin-card .front-and-back,
+  .history .history-container .art-nouveau-card .front-and-back,
+  .history .history-container .chat-noir-card .front-and-back {
+    align-self: center;
+  }
+  .history .history-container .arnold-bocklin-card .front-and-back .card-front img,
+  .history .history-container .art-nouveau-card .front-and-back .card-front img,
+  .history .history-container .chat-noir-card .front-and-back .card-front img {
+    width: 300px;
+  }
+  .history .history-container .arnold-bocklin-card .front-and-back .card-back,
+  .history .history-container .art-nouveau-card .front-and-back .card-back,
+  .history .history-container .chat-noir-card .front-and-back .card-back {
+    padding: 0;
+    width: 300px;
+    gap: 0;
+  }
+  .history .history-container .arnold-bocklin-card .front-and-back .card-back .information-container,
+  .history .history-container .art-nouveau-card .front-and-back .card-back .information-container,
+  .history .history-container .chat-noir-card .front-and-back .card-back .information-container {
+    gap: 0;
+  }
+  .history .history-container .arnold-bocklin-card .front-and-back .card-back .information-container h3,
+  .history .history-container .art-nouveau-card .front-and-back .card-back .information-container h3,
+  .history .history-container .chat-noir-card .front-and-back .card-back .information-container h3 {
+    padding: 10px 10px 0 15px;
+  }
+  .history .history-container .arnold-bocklin-card .front-and-back .card-back .information-container p,
+  .history .history-container .art-nouveau-card .front-and-back .card-back .information-container p,
+  .history .history-container .chat-noir-card .front-and-back .card-back .information-container p {
+    margin-top: 10px;
+    padding: 0 15px;
+  }
+  .history .history-container .arnold-bocklin-card .front-and-back .card-back .fonts h4,
+  .history .history-container .art-nouveau-card .front-and-back .card-back .fonts h4,
+  .history .history-container .chat-noir-card .front-and-back .card-back .fonts h4 {
+    margin: 0;
+  }
+  .history .history-container .arnold-bocklin-card .caption,
+  .history .history-container .art-nouveau-card .caption,
+  .history .history-container .chat-noir-card .caption {
+    margin: 10px;
+    text-align: center;
+  }
+  .big-flower {
+    display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .history .history-container .arnold-bocklin-card .front-and-back .card-back .information-container p,
+  .history .history-container .art-nouveau-card .front-and-back .card-back .information-container p,
+  .history .history-container .chat-noir-card .front-and-back .card-back .information-container p {
+    margin-top: 10px;
+  }
+  .history .history-container .arnold-bocklin-card .front-and-back .card-back .fonts h4,
+  .history .history-container .art-nouveau-card .front-and-back .card-back .fonts h4,
+  .history .history-container .chat-noir-card .front-and-back .card-back .fonts h4 {
+    margin: 10px 0 0 0;
+  }
+  .history .history-container .arnold-bocklin-card .caption,
+  .history .history-container .art-nouveau-card .caption,
+  .history .history-container .chat-noir-card .caption {
+    writing-mode: vertical-lr;
+    align-self: center;
+  }
+  .history .history-container .arnold-bocklin-card .caption,
+  .history .history-container .chat-noir-card .caption {
+    margin-left: 10px;
+  }
+  .history .history-container .art-nouveau-card .caption {
+    margin-right: 10px;
+  }
+  .history .big-flower {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .history .history-container .arnold-bocklin-card .caption,
+  .history .history-container .art-nouveau-card .caption,
+  .history .history-container .chat-noir-card .caption {
+    writing-mode: vertical-lr;
+    align-self: center;
+  }
+  .history .history-container .arnold-bocklin-card .front-and-back .card-back .information-container p,
+  .history .history-container .art-nouveau-card .front-and-back .card-back .information-container p,
+  .history .history-container .chat-noir-card .front-and-back .card-back .information-container p {
+    margin-top: 10px;
+  }
+  .history .history-container .arnold-bocklin-card .front-and-back .card-back .fonts h4,
+  .history .history-container .art-nouveau-card .front-and-back .card-back .fonts h4,
+  .history .history-container .chat-noir-card .front-and-back .card-back .fonts h4 {
+    margin: 10px 0 0 0;
+  }
+  .history .history-container .arnold-bocklin-card .caption,
+  .history .history-container .chat-noir-card .caption {
+    margin-left: 10px;
+  }
+  .history .history-container .art-nouveau-card .caption {
+    margin-right: 10px;
+  }
+  .history .big-flower {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .history .history-container .arnold-bocklin-card .caption,
+  .history .history-container .art-nouveau-card .caption,
+  .history .history-container .chat-noir-card .caption {
+    writing-mode: vertical-lr;
+    align-self: center;
+  }
+  .history .history-container .arnold-bocklin-card .front-and-back .card-back .information-container p,
+  .history .history-container .art-nouveau-card .front-and-back .card-back .information-container p,
+  .history .history-container .chat-noir-card .front-and-back .card-back .information-container p {
+    margin-top: 10px;
+  }
+  .history .history-container .arnold-bocklin-card .front-and-back .card-back .fonts h4,
+  .history .history-container .art-nouveau-card .front-and-back .card-back .fonts h4,
+  .history .history-container .chat-noir-card .front-and-back .card-back .fonts h4 {
+    margin: 10px 0 0 0;
+  }
+  .history .history-container .arnold-bocklin-card .caption,
+  .history .history-container .chat-noir-card .caption {
+    margin-left: 10px;
+  }
+  .history .history-container .art-nouveau-card .caption {
+    margin-right: 10px;
+  }
+  .history .history-container .arnold-bocklin-card {
+    margin-right: 200px;
+  }
+  .history .history-container .art-nouveau-card {
+    margin-left: 200px;
+  }
+  .history .history-container .chat-noir-card {
+    margin-right: 200px;
+  }
+  .history .big-flower {
+    position: fixed;
+    height: 90%;
+    z-index: 1;
+    bottom: 0;
+    width: fit-content;
+  }
+  .history .left {
+    left: 20px;
+  }
+  .history .right {
+    right: 20px;
+  }
+}
+@media (min-width: 1400px) {
+  .history .history-container .arnold-bocklin-card .caption,
+  .history .history-container .art-nouveau-card .caption,
+  .history .history-container .chat-noir-card .caption {
+    writing-mode: vertical-lr;
+    align-self: center;
+  }
+  .history .history-container .arnold-bocklin-card .front-and-back .card-back .information-container p,
+  .history .history-container .art-nouveau-card .front-and-back .card-back .information-container p,
+  .history .history-container .chat-noir-card .front-and-back .card-back .information-container p {
+    margin-top: 10px;
+  }
+  .history .history-container .arnold-bocklin-card .front-and-back .card-back .fonts h4,
+  .history .history-container .art-nouveau-card .front-and-back .card-back .fonts h4,
+  .history .history-container .chat-noir-card .front-and-back .card-back .fonts h4 {
+    margin: 10px 0 0 0;
+  }
+  .history .history-container .arnold-bocklin-card .caption,
+  .history .history-container .chat-noir-card .caption {
+    margin-left: 10px;
+  }
+  .history .history-container .art-nouveau-card .caption {
+    margin-right: 10px;
+  }
+  .history .history-container .arnold-bocklin-card {
+    margin-right: 500px;
+  }
+  .history .history-container .art-nouveau-card {
+    margin-left: 500px;
+    margin-top: -100px;
+  }
+  .history .history-container .chat-noir-card {
+    margin-right: 500px;
+    margin-top: -100px;
+  }
+  .history .big-flower {
+    position: fixed;
+    height: 90%;
+    z-index: 1;
+    bottom: 0;
+    width: fit-content;
+  }
+  .history .left {
+    left: 20px;
+  }
+  .history .right {
+    right: 20px;
+  }
+}
+.font {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  z-index: 4;
+  position: relative;
+  height: 100vh;
+  background: #371724;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.font .overzicht-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+  word-wrap: break-word;
+  margin-top: 30px;
+}
+.font .overzicht-container .uppercase {
+  text-transform: uppercase;
+}
+.font .editable {
+  z-index: 5;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.example {
+  font-size: 60px;
+  max-width: 80%;
+}
+
+@media (max-width: 576px) {
+  main .font .characteristic-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 20px;
+  }
+  main .font .characteristic-container .characteristic-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  main .font .characteristic-container .characteristic-wrapper .characteristic {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #4c1d27;
+    padding: 10px;
+  }
+}
+@media (min-width: 576px) {
+  main .font .characteristic-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 20px;
+  }
+  main .font .characteristic-container .characteristic-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  main .font .characteristic-container .characteristic-wrapper .characteristic {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #4c1d27;
+    padding: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  main .font .characteristic-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 20px;
+  }
+  main .font .characteristic-container .characteristic-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  main .font .characteristic-container .characteristic-wrapper .characteristic {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #4c1d27;
+    padding: 20px;
+  }
+}/*# sourceMappingURL=styles.css.map */
